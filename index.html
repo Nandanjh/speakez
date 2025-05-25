@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeakEZ Lounge | Jazz, Whiskey, and the Beautiful Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="nav-container">
+        <nav class="main-nav">
+            <div class="logo">SpeakEZ</div>
+            <ul class="nav-links">
+                <li><a href="#intro" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#football" class="nav-link">Football</a></li>
+                <li><a href="#soundwall" class="nav-link">Soundwall</a></li>
+                <li><a href="#visit" class="nav-link">Visit</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Landing Section -->
+        <section id="hero" class="hero-section">
+            <div class="video-container">
+                <video autoplay muted loop playsinline>
+                    <source src="https://player.vimeo.com/external/370331493.sd.mp4?s=e90dcaba73c19e0e36f03406b47bbd6992dd6c1c&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                </video>
+                <div class="overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="main-title">SpeakEZ Lounge</h1>
+                <div class="animated-line"></div>
+                <p class="subtitle">Jazz, Whiskey, and the Beautiful Game</p>
+            </div>
+            <div class="scroll-cue">
+                <div class="vinyl-record"></div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- 2. Split-Screen Intro -->
+        <section id="intro" class="intro-section">
+            <div class="split-container">
+                <div class="split-image">
+                    <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Dark lounge interior">
+                </div>
+                <div class="split-text">
+                    <h2>Our Philosophy</h2>
+                    <div id="typing-text" class="typing-text">
+                        <p>No passwords. No gimmicks.</p>
+                        <p>Just timeless ambiance, local flavors, and live energy every night.</p>
+                    </div>
+                    <div class="audio-control">
+                        <button id="audio-toggle" aria-label="Toggle background music">
+                            <span class="audio-icon">♪</span>
+                        </button>
+                        <audio id="background-audio" loop>
+                            <source src="https://assets.mixkit.co/music/preview/mixkit-jazz-bar-ambience-164.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Visual Marquee - Menu Highlights -->
+        <section id="menu" class="menu-section">
+            <h2 class="section-title">Menu Highlights</h2>
+            <div class="horizontal-scroll-container">
+                <div class="menu-timeline">
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Brunch plate">
+                        </div>
+                        <div class="menu-caption">
+                            <h3>Weekend Brunch</h3>
+                            <p>Locally sourced ingredients with a modern twist</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Craft cocktail">
+                        </div>
+                        <div class="menu-caption">
+                            <h3>Signature Cocktails</h3>
+                            <p>Handcrafted with house-infused spirits</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1600335895229-6e75511892c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Whiskey selection">
+                        </div>
+                        <div class="menu-caption">
+                            <h3>Whiskey Collection</h3>
+                            <p>Curated selection from around the world</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Dinner plate">
+                        </div>
+                        <div class="menu-caption">
+                            <h3>Evening Fare</h3>
+                            <p>Elevated pub classics with a chef's touch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Neon Strip Events Section -->
+        <section id="events" class="events-section">
+            <h2 class="section-title">Weekly Events</h2>
+            <div class="neon-container">
+                <div class="neon-events">
+                    <div class="neon-event active" data-color="#ff3366">
+                        <h3 class="neon-text">Sunday Vinyl</h3>
+                        <div class="event-details">
+                            <p>Bring your favorite records for our community listening session. Drink specials all night.</p>
+                            <p class="event-time">Every Sunday | 6PM - 11PM</p>
+                        </div>
+                    </div>
+                    <div class="neon-event" data-color="#33ccff">
+                        <h3 class="neon-text">Trivia Tuesdays</h3>
+                        <div class="event-details">
+                            <p>Test your knowledge with our rotating themes. Prizes for top teams.</p>
+                            <p class="event-time">Every Tuesday | 7PM - 10PM</p>
+                        </div>
+                    </div>
+                    <div class="neon-event" data-color="#ffcc00">
+                        <h3 class="neon-text">Jazz Thursdays</h3>
+                        <div class="event-details">
+                            <p>Live performances from local and touring jazz artists.</p>
+                            <p class="event-time">Every Thursday | 8PM - 12AM</p>
+                        </div>
+                    </div>
+                    <div class="neon-event" data-color="#66ff99">
+                        <h3 class="neon-text">Friday Mixology</h3>
+                        <div class="event-details">
+                            <p>Watch our bartenders craft special creations or join a workshop.</p>
+                            <p class="event-time">Every Friday | 7PM - 1AM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Football Culture Section -->
+        <section id="football" class="football-section">
+            <div class="football-bg">
+                <img src="https://images.unsplash.com/photo-1577223625816-7546f13df25d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Football fans watching a match">
+                <div class="overlay"></div>
+            </div>
+            <div class="football-content">
+                <h2>Where the Game Breathes</h2>
+                <div class="scoreboard">
+                    <div class="match">
+                        <div class="team home">
+                            <div class="team-crest">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg" alt="Arsenal">
+                            </div>
+                            <div class="team-name">Arsenal</div>
+                        </div>
+                        <div class="score">
+                            <span class="home-score">2</span>
+                            <span class="separator">:</span>
+                            <span class="away-score">1</span>
+                        </div>
+                        <div class="team away">
+                            <div class="team-crest">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea">
+                            </div>
+                            <div class="team-name">Chelsea</div>
+                        </div>
+                    </div>
+                    <div class="match-info">LIVE - 75'</div>
+                </div>
+                <div class="leagues-ticker">
+                    <div class="ticker-content">
+                        <span>Premier League</span>
+                        <span>La Liga</span>
+                        <span>Bundesliga</span>
+                        <span>Serie A</span>
+                        <span>MLS</span>
+                        <span>Champions League</span>
+                        <span>World Cup</span>
+                    </div>
+                </div>
+                <div class="supporters-flags">
+                    <div class="flag"><img src="https://upload.wikimedia.org/wikipedia/en/f/f5/American_Outlaws_logo.png" alt="American Outlaws"></div>
+                    <div class="flag"><img src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg" alt="Arsenal Supporters"></div>
+                    <div class="flag"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_United_States_Soccer_Federation.svg" alt="US Soccer"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Interactive SpeakEZ Soundwall -->
+        <section id="soundwall" class="soundwall-section">
+            <h2 class="section-title">SpeakEZ Soundwall</h2>
+            <div class="soundwall-grid">
+                <div class="sound-tile" data-audio="https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3">
+                    <img src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Vinyl record">
+                    <div class="sound-overlay">
+                        <span class="sound-icon">▶</span>
+                        <span class="sound-title">House Vibes</span>
+                    </div>
+                </div>
+                <div class="sound-tile" data-audio="https://assets.mixkit.co/music/preview/mixkit-jazz-bar-ambience-164.mp3">
+                    <img src="https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Jazz saxophone">
+                    <div class="sound-overlay">
+                        <span class="sound-icon">▶</span>
+                        <span class="sound-title">Jazz Quartet</span>
+                    </div>
+                </div>
+                <div class="sound-tile" data-audio="https://assets.mixkit.co/music/preview/mixkit-hip-hop-02-621.mp3">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="DJ mixing">
+                    <div class="sound-overlay">
+                        <span class="sound-icon">▶</span>
+                        <span class="sound-title">Hip Hop Beats</span>
+                    </div>
+                </div>
+                <div class="sound-tile" data-audio="https://assets.mixkit.co/music/preview/mixkit-deep-urban-623.mp3">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Live concert">
+                    <div class="sound-overlay">
+                        <span class="sound-icon">▶</span>
+                        <span class="sound-title">Urban Groove</span>
+                    </div>
+                </div>
+                <div class="sound-tile" data-audio="https://assets.mixkit.co/music/preview/mixkit-serene-view-443.mp3">
+                    <img src="https://images.unsplash.com/photo-1511735111819-9a3f7709049c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Vinyl collection">
+                    <div class="sound-overlay">
+                        <span class="sound-icon">▶</span>
+                        <span class="sound-title">Ambient Chill</span>
+                    </div>
+                </div>
+                <div class="sound-tile" data-audio="https://assets.mixkit.co/music/preview/mixkit-hazy-after-hours-132.mp3">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Concert crowd">
+                    <div class="sound-overlay">
+                        <span class="sound-icon">▶</span>
+                        <span class="sound-title">After Hours</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Visit Us Section -->
+        <section id="visit" class="visit-section">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.7732375086307!2d-85.67121492427287!3d42.96290089971365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819adc9c7d0d62b%3A0x2f9e33d3b0136729!2sSpeakEZ%20Lounge!5e0!3m2!1sen!2sus!4v1683147813138!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-glass">
+                <h2>Find the Vibe</h2>
+                <div class="contact-info">
+                    <p><strong>Address:</strong> 600 Monroe Ave NW, Grand Rapids, MI 49503</p>
+                    <p><strong>Phone:</strong> (616) 555-1234</p>
+                    <p><strong>Hours:</strong></p>
+                    <ul class="hours-list">
+                        <li>Monday - Thursday: 4PM - 12AM</li>
+                        <li>Friday: 4PM - 2AM</li>
+                        <li>Saturday: 11AM - 2AM</li>
+                        <li>Sunday: 11AM - 10PM</li>
+                    </ul>
+                </div>
+                <button class="reserve-btn" id="reserve-btn">Reserve a Table</button>
+            </div>
+            <div class="reservation-modal" id="reservation-modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h3>Reserve Your Table</h3>
+                    <form id="reservation-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" min="1" max="20" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Special Requests</label>
+                            <textarea id="notes"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 8. Footer - Floating Vibe Strip -->
+    <footer class="footer-section">
+        <div class="vibe-strip">
+            <div class="footer-links">
+                <a href="#menu">Menu</a>
+                <a href="#events">Events</a>
+                <a href="#football">Soccer</a>
+                <a href="#soundwall">Gallery</a>
+                <a href="#visit">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 SpeakEZ Lounge. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
